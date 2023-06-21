@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.apply-btn{
+  font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 50px;
+    border: none;
+    background-color: #5fcf80;
+    color: white;
+}
+
+.resigter{
+  align-items: center;
+  /* background: linear-gradient(#5fcf80, #ebfdee,#5fcf80); */
+  background-color: #5fcf80;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+
+
+#feedback-form {
+  width: 380px;
+  background-color: #fcfcfc;
+  padding: 30px 50px 30px;
+  box-shadow: 1px 0px 10px 0px #969696;
+  font-family: sans-serif;
+  border-radius: 20px;
+  height: auto;
+}
+
+.header{
+  font-family: "Raleway", sans-serif;
+    color: #4f4f4f;
+}
+
+#feedback-form * {
+    box-sizing: border-box;
+}
+
+#feedback-form h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#feedback-form input {
+  margin-bottom: 15px;
+}
+
+#feedback-form input{
+  display: block;
+  height: 32px;
+  padding: 6px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+#feedback-form label {
+  color: #777;
+  font-size: 0.8em;
+}
+
+#feedback-form input[type=checkbox] {
+  float: left;
+}
+
+#feedback-form input:not(:checked) + #feedback-phone {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#feedback-form #feedback-phone {
+  transition: .3s;
+}
+
+#feedback-form button[type=submit] {
+  display: block;
+  margin: 20px auto 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #eee;
+  font-weight: 700;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  background-color: #5fcf80;
+  
+  /* background: #207cca; 
+  background: -moz-linear-gradient(left, #207cca 0%, #9f58a3 100%); 
+  background: -webkit-linear-gradient(left, #207cca 0%,#9f58a3 100%); 
+  background: linear-gradient(to right, #207cca 0%,#9f58a3 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 );  */
+}
