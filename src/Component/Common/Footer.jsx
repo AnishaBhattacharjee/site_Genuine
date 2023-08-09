@@ -8,12 +8,12 @@ const Footer = () => {
     <div className="container">
       <div className="row">
         <div className="col-lg-3 col-md-6 footer-contact">
-          <h3>WHITETROOP</h3>
+          <h3>Genuine</h3>
           <p>
-            A108 Adam Street <br />
-            New York, NY 535022<br />
-            United States <br /><br />
-            <strong>Phone:</strong> +1 5589 55488 55<br />
+          Salt Lake, Sector-5 <br />
+          Webskitters Academy <br />
+            Kolkata / Durgapur <br /><br />
+            <strong>Phone:</strong> +91 9874563210<br />
             <strong>Email:</strong> info@example.com<br />
           </p>
         </div>
@@ -50,7 +50,7 @@ const Footer = () => {
   <div className="container d-md-flex py-4">
     <div className="me-md-auto text-center text-md-start">
       <div className="copyright">
-        © Copyright <strong><span>WHITETROOP</span></strong>. All Rights Reserved
+        © Copyright <strong><span>Genuine</span></strong>. All Rights Reserved
       </div>
       <div className="credits">
         {/* All the links in the footer should remain intact. */}

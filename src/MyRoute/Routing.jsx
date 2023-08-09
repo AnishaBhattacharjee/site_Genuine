@@ -2,16 +2,16 @@ import React from 'react'
 import { ToastContainer} from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import Home from '../Pages/Home'
-import Navbar from '../Component/Common/Navbar'
-import Footer from '../Component/Common/Footer'
+import Blogs from '../Pages/Blogs'
 import Courses from '../Pages/Courses'
-import Events from '../Pages/Events'
 import Contact from '../Pages/Contact'
 import Login from '../Pages/Authentication/Login'
 import Registration from '../Pages/Authentication/Registration'
 import ForgetPassword from '../Pages/Authentication/ForgetPassword';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Dashboard from '../Pages/Dashboard';
+import Trainer from '../Pages/Trainer';
+import Blog from '../Pages/Blog';
 
 const Routing = () => {
   function PrivateRoute({children}){
@@ -47,9 +47,13 @@ const Routing = () => {
       path:'/course',
       Component:<Courses/>
     },
+    // {
+    //   path:'/blog',
+    //   Component: <Blogs/>
+    // },
     {
-      path:'/event',
-      Component:<Events/>
+      path:'/blog2',
+      Component: <Blog/>
     },
     {
       path:'/contact',
@@ -58,6 +62,10 @@ const Routing = () => {
     {
       path:'/user',
       Component:<Dashboard/>
+    },
+    {
+      path:'/trainer',
+      Component:<Trainer/>
     }
   ]
 

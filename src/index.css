@@ -109,3 +109,30 @@ code {
   background: linear-gradient(to right, #207cca 0%,#9f58a3 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#9f58a3',GradientType=1 );  */
 }
+
+
+.seach{
+  border-radius: 10px;
+}
+
+.category-text{
+  color: rgb(0, 54, 13);
+  
+}
+
+.card-wrapper img{
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog-btn{
+  font-size: 14px;
+    background: #5fcf80;
+    padding: 7px 14px;
+    color: #fff;
+    margin: 0;
+}
+.category-text{
+  list-style-type: none;
+  padding: 8px 0px;
+}

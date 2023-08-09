@@ -14,8 +14,8 @@ const Home = () => {
     <main id="main">
     <About/>
     <ChooseUs/>
-    <HCourse/>
-    <Trainers/>
+    {/* <HCourse/> */}
+    {/* <Trainers/> */}
     </main>
     </Layout>
     

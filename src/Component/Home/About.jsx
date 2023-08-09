@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { getAbout } from '../Api/FetchApi';
 
 const About = () => {
+  const[title, setTitle]=useState([]);
+
+  const getAllData=async()=>{
+    const response=await getAbout();
+    setTitle(response?.data)
+  }
+
+  useEffect(()=>{
+    getAllData()
+  },[])
+
+  console.log(title);
+
   return (
     <>
     <section id="about" className="about">
@@ -10,20 +24,28 @@ const About = () => {
         <img src="assets/img/about.jpg" className="img-fluid" alt />
       </div>
       <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+{
+  title.map((item,index)=>{
+    return(
+      <>
+      <h3>{item.title}</h3>
         <p className="fst-italic">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
+          {item.description}
         </p>
         <ul>
-          <li><i className="bi bi-check-circle" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-          <li><i className="bi bi-check-circle" /> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-          <li><i className="bi bi-check-circle" /> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+          <li><i className="bi bi-check-circle" /> {item.feature1}</li>
+          <li><i className="bi bi-check-circle" /> {item.feature2}</li>
+          <li><i className="bi bi-check-circle" /> {item.feature3}</li>
         </ul>
         <p>
-          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          {item.conclusion}
         </p>
+      </>
+    )
+  })
+}   
       </div>
+
     </div>
   </div>
 </section>

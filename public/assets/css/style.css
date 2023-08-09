@@ -1082,13 +1082,14 @@ section {
 --------------------------------------------------------------*/
 .events .card {
   border: 0;
-  padding: 0 30px;
-  margin-bottom: 60px;
+  padding: 10 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   position: relative;
+  display: inline-flex;
 }
-
 .events .card-img {
-  width: calc(100% + 60px);
+  width:auto;
   margin-left: -30px;
   overflow: hidden;
   z-index: 9;
@@ -1137,9 +1138,9 @@ section {
   color: #5fcf80;
 }
 
-.events .card:hover img {
+/* .events .card:hover img {
   transform: scale(1.1);
-}
+} */
 
 .events .card:hover .card-body {
   border-color: #5fcf80;
